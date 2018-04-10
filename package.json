@@ -58,16 +58,18 @@
     "eslint-plugin-import": "^2.8.0",
     "husky": "^0.14.3",
     "mocha": "^5.0.1",
+    "nock": "^9.2.4",
     "node-fetch": "^2.0.0",
     "nyc": "^11.5.0",
     "rimraf": "^2.6.2",
-    "sinon": "^4.4.2",
+    "sinon": "^4.5.0",
     "sinon-chai": "^2.14.0",
     "sinon-stub-promise": "^4.0.0",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
-    "commander": "^2.15.1"
+    "commander": "^2.15.1",
+    "request": "^2.85.0"
   }
 }
