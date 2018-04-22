@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-converter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A CLI to convert Bitcoin to any currency provided",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run test:coverage",
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --reporter nyan",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --require babel-polyfill",
     "test:tdd": "npm run test -- --watch",
     "test:coverage": "nyc npm test"
   },
@@ -48,6 +48,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.3",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015-native-modules": "^6.9.4",
     "babel-register": "^6.26.0",
@@ -71,6 +72,7 @@
   "dependencies": {
     "commander": "^2.15.1",
     "ora": "^2.0.0",
-    "request": "^2.85.0"
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5"
   }
 }
